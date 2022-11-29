@@ -131,8 +131,8 @@ nav ul {
 }
 
 hr {
-    color: #ad9d95;
-    background-color: #ad9d95;
+    color: #4d362a;
+    background-color: #4d362a;
 }
 
 h1 {
@@ -165,7 +165,7 @@ h1 {
 
 .title-section span {
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     margin-bottom: 10px;
 }
 
@@ -196,9 +196,9 @@ h1 {
 
 .butt {
     background-color: transparent;
-    color: #ad9d95;
+    color: #4d362a;
     font-size: 12px;
-    border: 1px solid #ad9d95;
+    border: 1px solid #4d362a;
     border-radius: 15px;
     padding: 5px;
     margin-bottom: 10px;
@@ -272,7 +272,7 @@ input {
 }
 
 .tab-label:hover {
-    color: #ad9d95;
+    color: #4d362a;
 }
 
 .tab-label::after {
@@ -296,7 +296,7 @@ input {
 }
 
 input:checked + .tab-label {
-    color: #978278;
+    color: #2c1f18;
 }
 
 input:checked + .tab-label::after {
@@ -311,7 +311,7 @@ input:checked ~ .tab-content {
 }
 
 .num {
-    font-size: 7px;
+    font-size: 11px;
     padding: 2px 8px;
 }
 
@@ -340,14 +340,24 @@ h3, .text, .numbers, .static-text {
 }
 
 .wr-text {
-    width: 257px;
+    width: 209px;
     margin-bottom: 14px;
     text-align: end;
     padding: 16px 0;
 }
 
+.text {
+    font-size: 12px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
 .mob {
     font-size: 10px;
+    color: #fff;
+    border-color: #fff;
 }
 
 .statistic {
@@ -441,7 +451,7 @@ h5 {
 
 .fa-quote-left {
     font-size: 25px;
-    color: #ad9d95;
+    color: #4d362a;
 }
 
 .fa-user {
@@ -568,7 +578,7 @@ h6 {
 }
 
 .fa-arrow-right:active {
-    background-color: #ad9d95;
+    background-color: #4d362a;
     border-radius: 100%;
 }
 
@@ -608,7 +618,7 @@ h6 {
 
 .pp {
     font-size: 11px;
-    color: #a3a1a193;
+    color: #dfdfdf93;
 }
 
 .police {
@@ -783,6 +793,9 @@ h6 {
         -ms-flex-pack: justify;
         justify-content: space-between;
         margin-bottom: 50px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 
     h4 {
@@ -916,6 +929,9 @@ h6 {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
     }
 
     .gg {
@@ -927,5 +943,25 @@ h6 {
 
     .pp {
         font-size: 13px;
+    }
+
+    .img-project {
+        position: relative;
+        cursor: pointer;
+        background-size: cover;
+    }
+
+    .img-project:hover::before {
+        content: "";
+        position: absolute;
+        -webkit-transition: all 0.1s;
+        -o-transition: all 0.1s;
+        transition: all 0.1s;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
     }
 }
