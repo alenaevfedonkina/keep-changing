@@ -1,0 +1,355 @@
+$brown-color: #543d32
+$white: #fff
+$light-brown: #ad9d95
+$black: #000
+$gray: #808080
+$font: 'Source Sans Pro', sans-serif   
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap')
+
+body
+    margin: 0
+    font-family: 'Source Sans Pro', sans-serif
+button
+    font-family: 'Source Sans Pro', sans-serif
+.first-section
+    width: 100%
+    background-color: $brown-color
+.wrapper
+    margin: 0 auto
+    padding: 12px
+.header
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+.logo
+    color: $white
+.menu
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    li
+        margin: 10px
+        color: $white
+#menu-toggle [for=menu-toggle]
+    display: none
+#menu-toggle
+    display: none
+[for=menu-toggle]
+    display: block
+    position: fixed
+    width: 30px
+    text-align: center
+    right: 20px
+    top: 10px
+    z-index: 1
+[for=menu-toggle]::before
+    content: '☰'
+    color: $white
+nav
+    display: none
+    position: fixed
+    top: 0
+    padding-top: 30px
+    background: $brown-color
+    width: 40%
+    user-select: none
+    height: 100%
+    right: 0%
+    
+nav ul 
+    margin: 0
+    padding: 0
+    list-style-type: none
+    
+#menu-toggle:checked + label + nav
+    display: block
+    opacity: 0
+    animation: ani 1s forwards
+@keyframes ani
+    0% {opacity: 0}
+    100% {opacity: 1}
+hr
+    color: $light-brown
+    background-color: $light-brown
+h1
+    color: $white
+    font-size: 40px
+    margin-bottom: 10px
+.icon-img, img 
+    width: 135px
+    height: 135px
+    &__dis-more
+        width: 135px
+        text-align: center
+.title-section
+    display: flex
+    justify-content: space-between
+    align-items: center
+    span
+        color: $white
+        font-size: 12px
+        margin-bottom: 10px
+.more
+    text-decoration: none
+    color: $white
+    &:hover
+        cursor: pointer
+.fa-computer-mouse
+    color: $white
+    //2 section
+.second-section
+    background-image: url(https://i.pinimg.com/564x/23/53/5b/23535b43fd902928fd2e6ad9dc92435a.jpg)
+    width: 100%
+    height: 250px
+    background-size: cover
+    background-repeat: no-repeat
+    
+    //3 section
+.third-main
+    margin-bottom: 20px
+.butt
+    background-color: transparent
+    color: $light-brown
+    font-size: 12px
+    border: 1px solid $light-brown
+    border-radius: 15px
+    padding: 5px
+    margin-bottom: 10px
+h2
+    text-align: center
+.text-under-title
+    font-size: 13px
+.text-under
+    margin-bottom: 10px
+    width: 250px
+    text-align: start
+    margin: 0 auto
+    margin-bottom: 15px
+.third-main__text-under__left
+    text-align: end
+.btn-dark
+    background-color: transparent
+    color: $brown-color
+    font-size: 12px
+    border: 1px solid $brown-color
+    border-radius: 15px
+    padding: 5px
+.button-more
+    text-align: center
+.service
+    margin-bottom: 15px
+
+
+input 
+    position: absolute
+    opacity: 0
+    z-index: -1
+.tabs 
+    border-radius: 8px
+    overflow: hidden
+.tab 
+    width: 100%
+    color: white
+    overflow: hidden
+    &-label 
+        display: flex
+        justify-content: space-between
+        padding: 1em
+        font-weight: bold
+        cursor: pointer
+        color: $black
+        &:hover 
+            color: $light-brown
+        &::after 
+            content: "\276F"
+            width: 1em
+            height: 1em
+            text-align: center
+            transition: all .35s
+    &-content 
+        max-height: 0
+        padding: 0 1em
+        color: $brown-color
+        background: white
+        transition: all .35s
+input:checked 
+  + .tab-label 
+    color: darken($light-brown, 10%)
+    &::after 
+        transform: rotate(90deg)
+  ~ .tab-content 
+    max-height: 100vh
+    padding: 1em
+.num
+    font-size: 7px
+    padding: 2px 8px
+//4 section
+.four-section
+    background-color: $black
+    margin-bottom: 15px
+h3, .text, .numbers, .static-text
+    color: $white
+.btn-white
+    background-color: transparent
+    color: $white
+    font-size: 12px
+    border: 1px solid $white
+    border-radius: 15px
+    padding: 5px
+.four-wr
+    display: flex
+.wr-text
+    width: 257px
+    margin-bottom: 14px
+    text-align: end
+    padding: 16px 0
+.mob
+    font-size: 10px
+.statistic
+    display: flex
+.static-numb
+    display: flex
+    flex-direction: column
+    align-items: center
+.numbers
+    font-size: 30px
+.static-text
+    font-size: 12px
+    text-align: center
+
+    //5 section
+h4
+    font-size: 25px
+    margin: 10px 0
+.project
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    margin-bottom: 10px
+.naming-pr
+    font-size: 20px
+.tag
+    background-color: #efefef
+    color: #979797
+    border-radius: 15px
+    font-size: 12px
+    padding: 5px
+    border: none
+    margin-bottom: 6px
+.img-project
+    width: 280px
+    height: 168px
+    background-size: contain
+    background-repeat: no-repeat
+
+
+.img1
+    background-image: url(https://i.ytimg.com/vi/ZDFIyes8D0Y/maxresdefault.jpg)
+.img2
+    background-image: url(https://i.pinimg.com/564x/a4/f9/27/a4f927a25b2aa187cf99f4d5cdc89a20.jpg)
+.img3
+    background-image: url(https://i.pinimg.com/564x/f0/78/56/f0785600c48f0ca0ee0c6d851dbf9fae.jpg)
+.img4
+    background-image: url(https://i.pinimg.com/564x/ed/23/4f/ed234fe7066cef29e134348e2033dbf1.jpg)
+
+h5
+    font-size: 20px
+    margin: 10px 0
+.fa-quote-left
+    font-size: 25px
+    color: $light-brown
+.fa-user
+    font-size: 25px
+.client-profil
+    display: flex
+    align-items: center
+.name-client
+    display: flex
+    flex-direction: column
+    margin-left: 10px
+    &__name
+        font-size: 19px
+h6
+    font-size: 20px
+    text-align: center
+.fa-brands
+    color: #7a7a7a
+    font-size: 40px
+    margin-right: 26px
+    margin-bottom: 20px
+//6 section
+.six-section
+    background-color: $black
+.blog
+    color: $white
+    font-size: 25px
+.six-first-wr
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+.work
+    display: flex
+    align-items: center
+    margin-bottom: 15px
+.work-img
+    width: 204px
+    height: 110px
+    background-repeat: no-repeat
+    background-size: contain
+.blog-name
+    margin: 10px
+.img-w1
+    background-image: url(https://i.pinimg.com/564x/77/a4/4a/77a44a5a52013218749449e91f0e5aaa.jpg)
+.img-w2
+    background-image: url(https://i.pinimg.com/564x/ed/c3/67/edc367689f7f6d3c030094455bab312d.jpg)
+.img-w3
+    background-image: url(https://i.pinimg.com/236x/72/1c/21/721c215602ca21f0fb6609598e6f47ad.jpg)
+.img-w4
+    background-image: url(https://i.pinimg.com/236x/29/04/c8/2904c894a6a122303835d9ba3a673b3d.jpg)
+.title-blog
+    color: $white
+    font-size: 20px
+.date
+    color: $white
+    font-size: 11px
+.btn-blog
+    background-color: #c5bfbf6c
+    color: #d3cfcf
+    border-radius: 15px
+    padding: 4px
+    border: none
+    font-size: 11px
+    margin-right: 10px
+.fa-arrow-right
+    color: $white
+    &:active
+        background-color: $light-brown
+        border-radius: 100%
+.wr-btn-blog
+    margin-top: 10px
+.wr-btn
+    text-align: center
+    margin-bottom: 20px
+
+//7 section
+.sev-section
+    background-color: $brown-color
+.footer-wr
+    display: flex
+.footer-text
+    font-size: 25px
+    color: $white
+.wr-menu
+    display: none
+.gg
+    margin-right: 15px
+    font-size: 17px
+    color: $white
+.pp
+    font-size: 11px
+    color: #a3a1a193
+.police
+    display: flex
+    justify-content: space-between
+@import pc
